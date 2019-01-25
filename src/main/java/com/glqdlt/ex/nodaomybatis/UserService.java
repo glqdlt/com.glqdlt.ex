@@ -15,12 +15,12 @@ public class UserService {
 
 //    @Resource 는 @Qualifier 처럼 Bean 을 이름 기반으로 주입시켜주는 어노테이션입니다.
     @Resource
-    private MyBatisUserRepository myBatisUserRepository;
+    private MyBatisUserDao myBatisUserDao;
 
 
     public List<User> findAllUser(){
 
-        List<User> ll = myBatisUserRepository.findAllUser();
+        List<User> ll = myBatisUserDao.findAllUser();
 
         logger.info(ll.toString());
         return ll;

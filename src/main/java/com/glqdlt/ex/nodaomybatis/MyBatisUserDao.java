@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 @Mapper
-public interface MyBatisUserRepository extends UserRepo {
+public interface MyBatisUserDao extends UserRepository {
 
     @Select("select * from tb_user")
     @Override
