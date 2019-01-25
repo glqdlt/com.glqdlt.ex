@@ -9,5 +9,7 @@ public interface UserRepository {
 
     List<User> findAllUser();
 
+    void saveUser(User user);
+
 
 }
